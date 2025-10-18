@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VS code landing page</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family: Arial, sans-serif;
+            box-sizing:border-box;
+        }
+        a{
+            color: #0078d4;
+            text-decoration: none;
+        }
+        p{
+            margin:0;
+        }
+        .logo{
+            width:30px;
+        }
+        h1, h2{
+            margin:0;
+        }
+        section{
+            margin:0;
+        }
+        .snapshot{
+            width:800px;
+        }
+        .belowheader{
+            display:flex;
+            justify-content: center;
+            gap:0.5rem;
+        }
+        .mainFront{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .bottomBar{
+            display:grid;
+            grid-template-columns: 1fr 2fr;
+            align-items: center;
+        }
+       
+        .navBar{
+            background: black;
+            color: white;
+            display:flex;
+            justify-content: space-around;
+            padding:20px;
+        }
+        .leftnav{
+            display:flex;
+            align-items: center;
+            gap:1rem;
+        }
+        .rightnav{
+            display:flex;
+            align-items: center;
+        }
+        .belowheader{
+            background: black;
+            color:white;
+        }
+        .mainFront{
+            background:linear-gradient(180deg, #0e0e0e 0%, #141414 100%);
+            color:white;
+        }
+        .bottomBar{
+            background: black;
+             color: white;
+        }
+        .features{
+            background: linear-gradient(180deg, #0e0e0e 0%, #141414 100%);
+             color: white;
+        }
+        .footer{
+            background: gray;
+             color: white;
+        }
+        .languagePanel{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            column-gap: 2rem;
+        }
+        .features{
+            display:flex;
+            justify-content: center;
+        }
+    
+    </style>
+</head>
+<body>
+    <header class="navBar">
+        <div class="leftnav">
+                <img class="logo" src="https://code.visualstudio.com/favicon.ico" alt="logo">
+                <h3>Visual Studio Code</h3>
+                <a class="navLink" href="#">Docs</a>
+                <a class="navLink" href="#">Updates</a>
+                <a class="navLink" href="#">Blog</a>
+                <a class="navLink" href="#">Api</a>
+                <a class="navLink" href="#">Extensions</a>
+                <a class="navLink" href="#">FAQ</a>
+                <a class="navLink" href="#">Learn</a>
+            </div>
+        </div>
+        <div class="rightnav">
+            <input placeholder="Seach Docs"></input>
+            <button>Download</button>
+        </div>
+    </header>
+    <section class="belowheader">
+        <a class="version" href="">Version 1.92</a>
+        <p>is now available! Read about the new features and fixes from July.</p>
+    </section>
+    <section class="mainFront">
+        <div>
+            <div>
+                <p>Free.Built on open source.Runs anywhere.</p>
+            </div>
+            <div>
+                <h1>Code Editing.</h1>
+                <h1>Redefined.</h1>
+            </div>
+            <button>
+                Download for MacOS
+            </button>
+        </div>
+        <div>
+            <img class ="snapshot" src="https://code.visualstudio.com/assets/home/home-screenshot-mac-2x-v2.png" alt="snapshot">
+        </div>
+    </section>
+    <section class="bottomBar">
+        <div class="box1">
+            <h2>
+                Code in any language
+            </h2>
+            <p class="description">
+                VS Code supports almost every major programming language.
+                Several ship in the box,like JavaScript,TypeScript,CSS,and HTML,
+                but extensions for others can be found in the VS Code Marketplace.
+            </p>
+        </div>
+        <div class="languagePanel">
+                <div class="flex">
+                    <img src="https://code.visualstudio.com/assets/home/language-js.png" alt="JavaScript"></img>
+                    <code class="verticalCenter">JavaScript</code>
+                </div>
+                <div class="flex">
+                    <img src="https://code.visualstudio.com/assets/home/language-ts.png" alt="TypeScript"></img>
+                    <code class="verticalCenter">TypeScript</code>
+                </div>
+                <div class="flex">
+                    <img src="https://code.visualstudio.com/assets/home/language-python.png" alt="Python"></img>
+                    <code class="verticalCenter">Python</code>
+                </div>
+                <div class="flex">
+                    <img src="https://code.visualstudio.com/assets/home/language-cs.png" alt="C#"></img>
+                    <code class="verticalCenter">C#</code>
+                </div>
+                <div class="flex">
+                    <img src="https://code.visualstudio.com/assets/home/language-cpp.png" alt="C++"></img>
+                    <code class="verticalCenter">C++</code>
+                </div>
+                <div class="flex">
+                    <img src="https://code.visualstudio.com/assets/home/language-html.png" alt="HTML"></img>
+                    <code class="verticalCenter">HTML</code>
+                </div>
+                <div class="flex">
+                    <img src="https://code.visualstudio.com/assets/home/language-java.png" alt="Java"></img>
+                    <code class="verticalCenter">Java</code>
+                </div>
+                <div class="flex">
+                    <img src="https://code.visualstudio.com/assets/home/language-json.png" alt="JSON"></img>
+                    <code class="verticalCenter">JSON</code>
+                </div>
+                <div class="flex">
+                    <img src="https://code.visualstudio.com/assets/home/language-php.png" alt="PHP"></img>
+                    <code class="verticalCenter">PHP</code>
+                </div>
+                <div class="flex">
+                    <img src="https://code.visualstudio.com/assets/home/language-markdown.png" alt="Markdown"></img>
+                    <code class="verticalCenter">Markdown</code>
+                </div>
+                <div class="flex">
+                    <img src="https://code.visualstudio.com/assets/home/language-powershell.png" alt="Powershell"></img>
+                    <code class="verticalCenter">Powershell</code>
+                </div>
+                <div class="flex">
+                    <img src="https://code.visualstudio.com/assets/home/language-yaml.png" alt="YAML"></img>
+                    <code class="verticalCenter">YAML</code>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div>
+            <h1>IntelliSense</h1>
+            <p>Smart code completion based on variable types, function definitions, and imported modules</p>
+        </div>
+        <div>
+            <h1>
+                Debugging
+            </h1>
+            <p>Built-in debugging tools to help you identify and fix issues faster.</p>
+        </div>
+        <div>
+            <h1>
+                Extensions
+            </h1>
+            <p>Enhance your development workflow with a wide range of extensions.</p>
+        </div>
+    </section>
+    <footer class="footer">
+      <p>© 2024 Visual Studio Code. All rights reserved.</p>
+    </footer>
+</body>
+</html>
