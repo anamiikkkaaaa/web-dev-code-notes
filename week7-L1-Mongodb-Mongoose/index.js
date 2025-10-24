@@ -4,7 +4,7 @@ const {auth, JWT_SECRET} = require("./auth");
 const jwt = require("jsonwebtoken");
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb+srv://anamiikkkaaaa:allassholes.420@cluster0.nqvlen2.mongodb.net/todo-app-database");
+mongoose.connect("mongodb+srv://anamiikkkaaaa:<password>.420@cluster0.nqvlen2.mongodb.net/todo-app-database");
 
 mongoose.connection.on("connected", () => {
   console.log("MongoDB connected ✅");
