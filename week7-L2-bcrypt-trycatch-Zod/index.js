@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const { z } = require("zod");
 
-mongoose.connect("mongodb+srv://anamiikkkaaaa:allassholes.420@cluster0.nqvlen2.mongodb.net/todo-app-database-2");
+mongoose.connect("mongodb+srv://anamiikkkaaaa:<password>@cluster0.nqvlen2.mongodb.net/todo-app-database-2");
 
 mongoose.connection.on("connected", () => {
   console.log("MongoDB connected ✅");
